@@ -1,0 +1,101 @@
+body {
+    background: #e0dee0;
+    color: #222;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 10px;
+}
+
+#navbar{
+    width: 25%;
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    font-size: 16px;
+}
+
+.header-nav{
+    margin: 10px 0 0 30px;
+}
+
+#navbar li{
+    list-style: none;
+    margin: 0;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: black;
+}
+
+#navbar li a:hover{
+    color: #fff;
+}
+
+a:hover{
+    color: white;
+}
+
+#main-doc{
+    width: 50%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+#titulo{
+    padding: 5px;
+}
+
+.boton-link{
+    border: 1px solid black;
+    padding: 5px;   
+    background-color: purple;
+    width: 50%;
+    margin: 5px 0 5px 15px;
+    border-radius: 5px;
+}
+
+.boton-link:hover{
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.boton-link a{
+    color: white;
+}
+
+.figura{
+    max-width: 80%;
+}
+
+@media screen and (max-width: 880px) {
+    #navbar {
+        display: none;
+    }
+    .main-section {
+        margin-left: 0; 
+        padding: 20px; 
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .tipo-lista { 
+        margin-left: 20px; 
+        list-style-type: none;
+        height: auto; 
+    }
+    .tipo-lista li {
+        margin-left: -10px; 
+        padding-left: -10px; 
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .acortar {
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        max-width: 200px; 
+        display: block; 
+    }
+}

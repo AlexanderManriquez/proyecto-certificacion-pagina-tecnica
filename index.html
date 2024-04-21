@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <title>Java en el código de Visual Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <nav id="navbar">
+        <header class="header-nav">EN ESTE ARTÍCULO</header>
+        <ul>
+            <li><a href="#java_en_el_codigo_de_visual_studio" class="nav-link">Java en el codigo de Visual Studio</a></li>
+            <li><a href="#descripcion_general" class="nav-link">Descripcion General</a></li>
+            <li><a href="#instalar_codigo_de_visual_studio_para_java" class="nav-link">Instalar codigo de Visual Studio
+                    Para Java</a></li>
+            <li><a href="#empezando" class="nav-link">Empezando</a></li>
+            <li><a href="#trabajar_con_archivos_fuente_de_java" class="nav-link">Trabajar con archivos fuente de
+                    Java</a></li>
+            <li><a href="#trabajar_con_proyectos_java" class="nav-link">Trabajar con proyectos Java</a></li>
+            <li><a href="#edicion" class="nav-link">Edicion</a></li>
+            <li><a href="#fragmentos_de_codigo" class="nav-link">Fragmentos de codigo</a></li>
+            <li><a href="#depuracion" class="nav-link">Depuracion</a></li>
+            <li><a href="#pruebas" class="nav-link">Pruebas</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="java_en_el_codigo_de_visual_studio">
+            <header id="titulo">
+                <h1>Java en el codigo de Visual Studio</h1>
+            </header>
+            <div id="contenido">
+                <p>La compatibilidad con Java en Visual Studio Code se proporciona a través de una amplia gama de
+                    extensiones . Combinadas con el poder del núcleo VS Code, estas extensiones le brindan un editor de
+                    código liviano y de alto rendimiento que también admite muchas de las técnicas de desarrollo Java
+                    más
+                    comunes.</p>
+                <p>Este artículo le brindará una descripción general de las diferentes capacidades de Visual Studio Code
+                    para desarrolladores de Java. Para obtener un tutorial rápido sobre cómo editar, ejecutar y depurar
+                    un
+                    programa Java con Visual Studio Code, utilice el botón Tutorial de introducción a Java que aparece a
+                    continuación.</p>
+                <div class="boton-link"><a href="https://code.visualstudio.com/docs/java/java-tutorial">Tutorial de
+                        introducción a Java</a>
+                </div>
+            </div>
+        </section>
+        <section class="main-section" id="descripcion_general">
+            <header id="titulo">
+                <h3>Descripcion General</h3>
+            </header>
+            <div id="contenido">
+                <p>VS Code proporciona funciones de lenguaje esenciales, como finalización de código, refactorización,
+                    linting, formateo y fragmentos de código, junto con una cómoda depuración y compatibilidad con
+                    pruebas unitarias. VS Code también se integra con herramientas y marcos como Maven, Tomcat, Jetty y
+                    Spring Boot. Al aprovechar el poder de Visual Studio Code, los desarrolladores de Java obtienen una
+                    excelente herramienta tanto para la edición rápida de código como para el ciclo completo de
+                    depuración y prueba. Es una excelente opción para su trabajo en Java si busca una herramienta que:
+                </p>
+                <ul class="tipo-lista">
+                    <li>Es rápido, liviano, gratuito y de código abierto.</li>
+                    <li>Admite muchos otros lenguajes, no solo Java.</li>
+                    <li>Le ayuda a comenzar su viaje a Java sin instalar ni aprender un IDE complejo.</li>
+                    <li>Proporciona excelente soporte para microservicios, incluidos marcos populares, herramientas de
+                        contenedores e integración en la nube.</li>
+                    <li>Ofrece funciones de colaboración basadas en equipos, como Visual Studio Live Share .</li>
+                    <li>Mejora su productividad a través de IntelliSense y otras funciones de edición con reconocimiento
+                        de código.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="main-section" id="instalar_codigo_de_visual_studio_para_java">
+            <header id="titulo">
+                <h3>Instalar codigo de Visual Studio para Java</h3>
+            </header>
+            <div id="contenido"></div>
+            <p>Para ayudarle a realizar una configuración rápida, le recomendamos que utilice Coding Pack for Java , que
+                es el paquete de VS Code, el Java Development Kit (JDK) y una colección de extensiones sugeridas por
+                Microsoft. El paquete de codificación también se puede utilizar para arreglar un entorno de desarrollo
+                existente.</p>
+            <div class="boton-link"><a href="https://aka.ms/vscode-java-installer-win">Instale el paquete de
+                    codificación para Java -
+                    Windows</a>
+            </div>
+            <div class="boton-link"><a href="https://aka.ms/vscode-java-installer-mac">Instale el paquete de
+                    codificación para Java -
+                    macOS</a>
+            </div>
+            <p>Si ya instaló VS Code y desea agregarle compatibilidad con Java, le recomendamos utilizar Extension Pack
+                para Java , una colección de extensiones sugeridas por Microsoft:</p>
+            <ol class="tipo-lista">
+                <li>Soporte de lenguajes para Java™ de Red Hat</li>
+                <li>Depurador para Java</li>
+                <li>Ejecutor de pruebas para Java</li>
+                <li>Maven para Java</li>
+                <li>Gerente de Proyectos para Java</li>
+                <li>Visual Studio IntelliCode</li>
+            </ol>
+            <a href="vscode:extension/vscjava.vscode-java-pack">Instale el paquete de extensión para Java</a>
+        </section>
+        <section class="main-section" id="empezando">
+            <header id="titulo">
+                <h3>Empezando</h3>
+            </header>
+            <div id="contenido">
+                <h4>Instalar un kit de desarrollo de Java (JDK)</h4>
+                <p>Un Java Development Kit (JDK) es un entorno de desarrollo de software utilizado para desarrollar
+                    aplicaciones Java. Para ejecutar Java dentro de Visual Studio Code, necesita instalar un JDK. El
+                    paquete de extensión para Java admite la versión 1.5 o superior de Java.</p>
+                <p>Para los desarrolladores nuevos en Java o en VS Code, ofrecemos algunos consejos en nuestras
+                    extensiones. Una vez que haya instalado el paquete de extensión para Java , podrá ver los consejos
+                    utilizando el comando Java: Consejos para principiantes de la paleta de comandos en VS Code.</p>
+                <p>Abra la paleta de comandos <code> ( Ctrl+Shift+P ) </code> y escriba "consejos de Java" para
+                    seleccionar el comando.
+                </p>
+                <img src="https://code.visualstudio.com/assets/docs/languages/java/beginner-tips.png"
+                    alt="imagen del programa vs code" class="figura"/>
+            </div>
+        </section>
+        <section class="main-section" id="trabajar_con_archivos_fuente_de_java">
+            <header id="titulo">
+                <h3>Trabajar con archivos fuente de Java</h3>
+            </header>
+            <div id="contenido">
+                <p>Puede utilizar VS Code para leer, escribir, ejecutar y depurar archivos fuente de Java sin crear un
+                    proyecto. VS Code para Java admite dos modos, ligero y estándar. El modo ligero es ideal para
+                    escenarios que solo tratan con archivos fuente. Si desea trabajar con un proyecto a gran escala,
+                    necesitará el modo estándar. Puede cambiar fácilmente del modo ligero al modo estándar, cuando sea
+                    necesario. Para obtener más información, consulte <a
+                        href="https://code.visualstudio.com/docs/languages/java#_install-a-java-development-kit-jdk:~:text=Puede%20utilizar%20VS,consulte%20Modo%20ligero">Modo
+                        ligero.</a></p>
+            </div>
+        </section>
+        <section class="main-section" id="trabajar_con_proyectos_java">
+            <header id="titulo">
+                <h3>Trabajar con proyectos Java</h3>
+            </header>
+            <div id="contenido">
+                <p>Hay tres cosas que debes comprender para trabajar con Java en VS Code:</p>
+                <ol class="tipo-lista">
+                    <li>¿Cómo maneja VS Code los espacios de trabajo?</li>
+                    <li>¿Cómo maneja VS Code Java?</li>
+                    <li>¿Cómo maneja VS Code los espacios de trabajo que contienen Java?</li>
+                </ol>
+                <h4>Espacios de trabajo de código VS</h4>
+                <p>En Visual Studio Code, un "Espacio de trabajo" significa una colección de una o más carpetas del
+                    sistema de archivos (y sus elementos secundarios) y todas las configuraciones de VS Code que entran
+                    en vigor cuando ese "Espacio de trabajo" está abierto en VS Code. Hay dos tipos de "espacios de
+                    trabajo" en VS Code, "espacios de trabajo de carpetas" y "espacios de trabajo de múltiples raíces".
+                </p>
+                <p>VS Code presenta un "espacio de trabajo de carpeta" cuando abre una carpeta (directorio) del sistema
+                    de archivos en VS Code.</p>
+                <p>Un "espacio de trabajo de múltiples raíces" puede hacer referencia a varias carpetas (directorios) de
+                    partes dispares del sistema de archivos y VS Code muestra el contenido de las carpetas del espacio
+                    de trabajo juntos en el Explorador de archivos .</p>
+                <h4>Proyectos Java en VS Code</h4>
+                <p>A diferencia de IDE como IntelliJ IDEA, NetBeans o Eclipse, el concepto de "proyecto Java" se
+                    proporciona completamente mediante extensiones y no es un concepto central en el código VS base.
+                    Cuando trabaje con "proyectos Java" en VS Code, debe tener instaladas las extensiones necesarias
+                    para trabajar con esos archivos de proyecto.</p>
+                <p>Por ejemplo, los proyectos Maven, Eclipse y Gradle Java son compatibles a través de Language Support
+                    for Java™ de Red Hat , utilizando M2Eclipse , que proporciona soporte para Maven, y Buildship , que
+                    proporciona soporte para Gradle a través de Eclipse JDT Language Server.</p>
+                <h4>Espacios de trabajo de VS Code que contienen proyectos Java</h4>
+                <p>Suponiendo que las extensiones de Java necesarias estén instaladas, abrir un espacio de trabajo de VS
+                    Code que contenga artefactos de Java hará que esas extensiones comprendan esos artefactos y
+                    presenten opciones para trabajar con ellos.</p>
+            </div>
+        </section>
+        <section class="main-section" id="edicion">
+            <header id="titulo">
+                <h3>Edicion</h3>
+            </header>
+            <div id="contenido">
+                <h4>Navegación de código</h4>
+                <p>Java en Visual Studio Code también admite funciones de navegación del código fuente, como buscar
+                    símbolos, ver definición e ir a definición. La extensión Spring Boot Tools proporciona soporte
+                    mejorado de navegación y finalización de código para proyectos Spring Boot .</p>
+                <p>Una de las ventajas clave de VS Code es la velocidad. Cuando abra su archivo o carpeta fuente de
+                    Java, en unos segundos, con la ayuda del Modo ligero , podrá navegar por su base de código con la
+                    vista Esquema, así como con comandos como Ir a definición e Ir a referencia . Esto es especialmente
+                    útil cuando abres un proyecto por primera vez</p>
+                <h4>Finalización de código</h4>
+                <p>IntelliSense es un término general para las funciones del lenguaje, incluida la finalización
+                    inteligente de código (método en contexto y sugerencias de variables) en todos sus archivos y para
+                    módulos integrados y de terceros. VS Code admite la finalización de código e IntelliSense para Java
+                    a través del soporte de lenguaje para Java™ de Red Hat . También proporciona IntelliSense asistido
+                    por IA llamado IntelliCode al colocar lo que es más probable que use en la parte superior de su
+                    lista de finalización.</p>
+                <video src="https://code.visualstudio.com/docs/languages/java/intellisense.mp4" class="figura"></video>
+                <h4>Mejore las terminaciones con IA</h4>
+                <p>GitHub Copilot es una herramienta de finalización de código impulsada por IA que te ayuda a escribir
+                    código de forma más rápida e inteligente. Puede usar la extensión GitHub Copilot en VS Code para
+                    generar código o aprender del código que genera.</p>
+            </div>
+        </section>
+        <section class="main-section" id="fragmentos_de_codigo">
+            <header>
+                <h3>Fragmentos de codigo</h3>
+            </header>
+            <div id="contenido">
+                <p>Visual Studio Code admite una amplia gama de fragmentos de código Java populares para hacerlo más
+                    productivo, como clase/interfaz,<code> syserr, sysout, if/else, try/catch </code>, método principal
+                    estático.
+                    Utilizando información del servidor de lenguaje Java, también proporciona una vista previa del
+                    fragmento de código durante la selección.</p>
+                <p>Por ejemplo, escribir " sout " o " sysout " generará un fragmento de código para
+                    <code> System.out.println(). </code>
+                    De manera similar, escribir " main " o " psvm " generará un fragmento de código para <code> public static
+                    void main(String[] args) {} </code>
+                </p>
+                <img src="https://code.visualstudio.com/assets/docs/languages/java/code-snippet.png"
+                    alt="imagen de vs code" class="figura" />
+            </div>
+        </section>
+        <section class="main-section" id="depuracion">
+            <header>
+                <h3>Depuracion</h3>
+            </header>
+            <div id="contenido">
+                <p>Debugger para Java es un depurador de Java ligero basado en Java Debug Server . Funciona con Language
+                    Support for Java™ de Red Hat para permitir a los usuarios depurar código Java dentro de Visual
+                    Studio Code.</p>
+                <p>Iniciar una sesión de depuración es fácil: haga clic en el botón Ejecutar|Depurar disponible en
+                    CodeLens de su <code>main()</code>función o presione F5 . El depurador generará automáticamente la
+                    configuración adecuada para usted.</p>
+                <video src="https://code.visualstudio.com/docs/languages/java/resolve-main.mp4" class="figura"></video>
+                <p>Aunque es liviano, el depurador de Java admite funciones avanzadas como evaluación de expresiones,
+                    puntos de interrupción condicionales y reemplazo de código activo.</p>
+            </div>
+        </section>
+        <section class="main-section" id="pruebas">
+            <header>
+                <h3>Pruebas</h3>
+            </header>
+            <div id="contenido">
+                <p>Con el soporte de la extensión Test Runner para Java , puede ejecutar, depurar y administrar
+                    fácilmente sus casos de prueba JUnit y TestNG.</p>
+                <video src="https://code.visualstudio.com/docs/languages/java/testng.mp4" class="figura"></video>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
